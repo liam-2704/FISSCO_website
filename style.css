@@ -1,3 +1,30 @@
+@media (max-width: 850px) {
+    .nav {
+        gap: 0.5rem;
+    }
+
+    .hero {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .skills-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        text-align: center;
+        line-height: 0.5;
+        margin-bottom: 150px;
+    }
+
+}
+
 .view {
     display: none;
     animation: fadeIn 0.35s ease-out;
@@ -42,194 +69,7 @@
     font-weight: 600;
 }
 
-.dashboard-container {
-    margin-top: 60px;
-    max-width: 1100px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    font-size: 1.8rem;
-}
-
-.custom-list {
-    padding: 0;
-}
-
-.list-group-item {
-    background: rgba(30, 41, 59, 0.55);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 14px;
-    margin-bottom: 12px;
-    padding: 16px 20px;
-    font-size: 14px;
-    backdrop-filter: blur(6px);
-    transition: all 0.25s ease;
-}
-
-.list-group-item:hover {
-    background: rgba(51, 65, 85, 0.75);
-    transform: translateY(-3px);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(8px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@media (max-width: 750px) {
-    .navbar-nav {
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .nav-link {
-        margin-left: 12px;
-        font-size: 14px;
-    }
-
-    .dashboard-container {
-        margin-top: 40px;
-        padding: 0 15px;
-        width: 100%;
-        max-width: 1400px;
-    }
-
-    .two-col-grid {
-        grid-template-columns: 1fr !important;
-        display: grid;
-    }
-
-    .left-col,
-    .right.col {
-        width: 100%;
-    }
-
-    .chart-container {
-
-        min-height: 300px;
-    }
-}
-
-.list-group-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.weather-date {
-    color: #94a3b8;
-    font-size: 14px;
-}
-
-.weather-value {
-    font-weight: 600;
-    font-size: 16px;
-    color: #ffffff;
-}
-
-.chart-container {
-    background: rgba(30, 41, 59, 0.55);
-    padding: 28px;
-    border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
-}
-
-.no-data {
-    text-align: center;
-    padding: 80px 20px;
-    color: #64748b;
-    font-size: 15px;
-}
-
-.stats-box {
-    background: rgba(30, 41, 59, 0.55);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 18px;
-    padding: 28px 32px;
-    font-size: 1.15rem;
-    line-height: 1.65;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
-    transition: all 0.25s ease;
-}
-
-.stats-box:hover {
-    transform: translateY(-3px);
-    background: rgba(51, 65, 85, 0.65);
-}
-
-.two-col-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.left-col {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.right-col {
-    max-height: fit-content;
-    overflow-y: auto;
-}
-
-.chart-container canvas {
-    width: 100% !important;
-    height: 100% !important;
-}
-
-.chart-container {
-    min-height: 450px;
-    padding: 28px 32px;
-}
-
-.time-btn {
-    background: rgba(30, 41, 59, 0.55);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    color: #e2e8f0;
-    padding: 10px 18px;
-    margin: 6px 4px;
-    border-radius: 12px;
-    font-size: 14px;
-    font-weight: 500;
-    backdrop-filter: blur(6px);
-    transition: all 0.25s ease;
-}
-
-.time-btn:hover {
-    background: rgba(51, 65, 85, 0.75);
-    transform: translateY(-2px);
-    color: #ffffff;
-}
-
-.time-btn.active-time {
-    background: rgba(59, 130, 246, 0.35);
-    border-color: rgba(59, 130, 246, 0.65);
-    color: #ffffff;
-    font-weight: 600;
-    transform: translateY(-2px);
-}
-
-#tempView {
-    display: none !important;
-}
-
+/* Language buttons */
 .lang-btn {
     background: rgba(30, 41, 59, 0.55);
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -258,10 +98,12 @@ h2 {
     font-weight: 600;
 }
 
+/* Smooth scroll */
 html {
     scroll-behavior: smooth;
 }
 
+/* Page sections */
 .page-section {
     padding: 80px 20px;
     text-align: center;
@@ -273,12 +115,12 @@ html {
     color: #ffffff;
 }
 
+/* Services grid */
 .services-grid {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    /* ensures responsiveness */
 }
 
 .service-box {
@@ -300,4 +142,101 @@ html {
 .service-box .icon {
     font-size: 2.5rem;
     margin-bottom: 15px;
+}
+
+/* Container box layout */
+.container-box {
+    padding: 60px 20px;
+}
+
+.box-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+.box-text {
+    flex: 1;
+    background: rgba(30, 41, 59, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+    color: #e2e8f0;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease;
+}
+
+.box-text:hover {
+    transform: translateY(-5px);
+    background: rgba(59, 130, 246, 0.35);
+}
+
+.box-text h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skills {
+    padding: 3rem 2rem;
+    margin-top: 10px;
+}
+
+.skills-cards {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    display: flex;
+}
+
+.card {
+    background: #87CEEB;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    /* stack multiple paragraphs vertically */
+    gap: 15px;
+}
+
+.image {
+    width: 50%;
+    height: auto;
+    min-width: 400px;
+    min-height: 280px;
 }
