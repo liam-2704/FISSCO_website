@@ -1,6 +1,7 @@
 @media (max-width: 850px) {
     .nav {
         gap: 0.5rem;
+        flex-direction: row;
     }
 
     .hero {
@@ -239,4 +240,87 @@ html {
     height: auto;
     min-width: 400px;
     min-height: 280px;
+}
+
+.market-section {
+    position: relative;
+    /* allows absolute positioning inside */
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #87CEEB, #40E0D0);
+    flex-wrap: wrap;
+}
+
+.market-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000000;
+    /* header text black */
+}
+
+.market-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #000000;
+
+}
+
+.market-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000000;
+    /* paragraph text black */
+    text-align: center;
+}
+
+.market-box {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    /* image + text side by side */
+    align-items: center;
+    /* center items vertically */
+    gap: 20px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease;
+}
+
+.market-box:hover {
+    transform: translateY(-5px);
+}
+
+.market-image {
+    flex: 0 0 200px;
+    /* fixed width for image column */
+    display: flex;
+    justify-content: center;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically */
+}
+
+.market-image img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.market-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* center text vertically if shorter */
+    gap: 10px;
+    color: #000000;
 }
