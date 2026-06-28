@@ -39,9 +39,9 @@
     background: linear-gradient(to bottom,
             #1E3A8A 0%,
             /* deep ocean at the very top */
-            #1E3A8A 40%,
+            #1E3A8A 30%,
             /* hold dark blue longer */
-            #40E0D0 85%,
+            #40E0D0 90%,
             /* turquoise appears later */
             #2DD4BF 100%
             /* seafoam at the very bottom */
@@ -54,7 +54,6 @@
 /* Navbar */
 .custom-navbar {
     background: rgba(30, 64, 175, 0.6);
-    /* ocean blue with transparency */
     backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -334,4 +333,47 @@ html {
     /* center text vertically if shorter */
     gap: 10px;
     color: #000000;
+}
+
+.info-section {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #87CEEB 0%, #40E0D0 50%, #2DD4BF 100%);
+    text-align: center;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.info-box {
+    background: rgba(250, 250, 250, 0.9);
+    border: 1px solid rgba(30, 64, 175, 0.2);
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 300px;
+    color: #1E3A8A;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #40E0D0, #2DD4BF);
+    color: #ffffff;
+}
+
+.info-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.info-box p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
