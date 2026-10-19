@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
     allSlideshows.forEach(function(container) {
         container.slideIndex = 1; 
         showSlides(container, container.slideIndex);
+
+        setInterval(function() {
+            container.slideIndex += 1;
+            showSlides(container, container.slideIndex);
+        }, 1500); 
     });
 });
 
